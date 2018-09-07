@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>deduct.h</itemPath>
+      <itemPath>define.h</itemPath>
+      <itemPath>getRNinfo.h</itemPath>
+      <itemPath>loading.h</itemPath>
+      <itemPath>showscreen.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>appmain.c</itemPath>
+      <itemPath>deduct.c</itemPath>
+      <itemPath>getRNinfo.c</itemPath>
+      <itemPath>loading.c</itemPath>
+      <itemPath>showscreen.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>NbMakefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>Gnueabi|Cygwin</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>arm-brcm-linux-gnueabi-gcc</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA5000S/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA5000S/include</pElem>
+            <pElem>OpenSSL/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV5SINC}" -fsigned-char -Wundef -Wstrict-prototypes -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA5000S/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA5000S/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV5SINC}" -fsigned-char -Wundef -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>dist/V5S/App/V5S_SmartCard</output>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibLibItem>caethernet</linkerLibLibItem>
+            <linkerLibLibItem>cafont</linkerLibLibItem>
+            <linkerLibLibItem>cafs</linkerLibLibItem>
+            <linkerLibLibItem>cakms</linkerLibLibItem>
+            <linkerLibLibItem>calcd</linkerLibLibItem>
+            <linkerLibLibItem>camodem</linkerLibLibItem>
+            <linkerLibLibItem>capmodem</linkerLibLibItem>
+            <linkerLibLibItem>caprt</linkerLibLibItem>
+            <linkerLibLibItem>cartc</linkerLibLibItem>
+            <linkerLibLibItem>cauart</linkerLibLibItem>
+            <linkerLibLibItem>cauldpm</linkerLibLibItem>
+            <linkerLibLibItem>causbh</linkerLibLibItem>
+            <linkerLibLibItem>cagsm</linkerLibLibItem>
+            <linkerLibLibItem>cabarcode</linkerLibLibItem>
+            <linkerLibLibItem>pthread</linkerLibLibItem>
+            <linkerLibLibItem>dl</linkerLibLibItem>
+            <linkerLibLibItem>caclvw</linkerLibLibItem>
+            <linkerLibLibItem>catls</linkerLibLibItem>
+            <linkerLibLibItem>ctosapi</linkerLibLibItem>
+            <linkerLibLibItem>crypto</linkerLibLibItem>
+            <linkerLibLibItem>curl</linkerLibLibItem>
+            <linkerLibLibItem>ssl</linkerLibLibItem>
+            <linkerLibLibItem>z</linkerLibLibItem>
+            <linkerLibLibItem>freetype</linkerLibLibItem>
+          </linkerLibItems>
+          <commandLine>-L . "-L${SDKV5SLIB}" "-L${SDKV5SLIBN}"</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="appmain.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="deduct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="deduct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="define.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="getRNinfo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="getRNinfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="loading.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="loading.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="showscreen.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="showscreen.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>Gnueabi|Cygwin</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>arm-brcm-linux-gnueabi-gcc</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA5000S/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA5000S/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV5SINC}" -fsigned-char -Wundef -Wstrict-prototypes -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </cTool>
+        <ccTool>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA5000S/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA5000S/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV5SINC}" -fsigned-char -Wundef -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>dist/V5S/Debug/V5S_SmartCard</output>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibLibItem>caethernet</linkerLibLibItem>
+            <linkerLibLibItem>cafont</linkerLibLibItem>
+            <linkerLibLibItem>cafs</linkerLibLibItem>
+            <linkerLibLibItem>cakms</linkerLibLibItem>
+            <linkerLibLibItem>calcd</linkerLibLibItem>
+            <linkerLibLibItem>camodem</linkerLibLibItem>
+            <linkerLibLibItem>capmodem</linkerLibLibItem>
+            <linkerLibLibItem>caprt</linkerLibLibItem>
+            <linkerLibLibItem>cartc</linkerLibLibItem>
+            <linkerLibLibItem>cauart</linkerLibLibItem>
+            <linkerLibLibItem>cauldpm</linkerLibLibItem>
+            <linkerLibLibItem>causbh</linkerLibLibItem>
+            <linkerLibLibItem>cagsm</linkerLibLibItem>
+            <linkerLibLibItem>cabarcode</linkerLibLibItem>
+            <linkerLibLibItem>pthread</linkerLibLibItem>
+            <linkerLibLibItem>dl</linkerLibLibItem>
+            <linkerLibLibItem>caclvw</linkerLibLibItem>
+            <linkerLibLibItem>catls</linkerLibLibItem>
+            <linkerLibLibItem>ctosapi</linkerLibLibItem>
+            <linkerLibLibItem>crypto</linkerLibLibItem>
+            <linkerLibLibItem>curl</linkerLibLibItem>
+            <linkerLibLibItem>ssl</linkerLibLibItem>
+            <linkerLibLibItem>z</linkerLibLibItem>
+            <linkerLibLibItem>freetype</linkerLibLibItem>
+          </linkerLibItems>
+          <commandLine>-L . "-L${SDKV5SLIB}" "-L${SDKV5SLIBN}"</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="appmain.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="deduct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="deduct.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="define.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="getRNinfo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="getRNinfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="loading.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="loading.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="showscreen.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="showscreen.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
